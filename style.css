@@ -1,0 +1,152 @@
+body{
+  font-family: arial;
+  font-weight: bold;
+
+}
+
+
+.pictureframe {
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  border: 8px solid #5f7b87;
+  padding: 8px;
+  border-radius: 5px;
+}
+ 
+.pictureframe img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+
+
+
+.image-containerK {
+  position: fixed;
+  display: inline-block;
+  top: 20px;
+  left: 20px;
+}
+
+.image-containerK img {
+  width: 300px;
+  display: block;
+}
+
+.image-containerH {
+  position: fixed;
+  display: inline-block;
+  bottom: 20px;
+  left: 20px;
+}
+
+.image-containerH img {
+  width: 300px;
+  display: block;
+}
+
+.image-containerS {
+  position: fixed;
+  display: inline-block;
+  bottom: 20px;
+  right: 20px;
+}
+
+.image-containerS img {
+  width: 300px;
+  display: block;
+}
+
+.image-containerB {
+  position: fixed;
+  display: inline-block;
+  top: 20px;
+  right: 20px;
+}
+
+.image-containerB img {
+  width: 300px;
+  display: block;
+}
+
+
+.image-button {
+  background: #5f7b87;
+  color: white;
+  padding: 10px 15px;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+}
+
+
+.button {
+  background: maroon;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  display: inline-block;
+}
+ 
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .image-button {
+    padding: 8px 12px;
+    font-size: 0.9rem;
+  }
+
+  .image-containerK,
+  .image-containerB {
+    top: 10px;
+  }
+
+  .image-containerH,
+  .image-containerS {
+    bottom: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .pictureframe {
+    max-width: 90%;
+    border-width: 4px;
+    padding: 4px;
+  }
+
+  .pictureframe img {
+    width: 100%;
+  }
+
+  .image-button {
+    padding: 6px 10px;
+    font-size: 0.8rem;
+  }
+
+  /* On very small screens, stack buttons under the image instead of fixed corners */
+  .image-containerK,
+  .image-containerH,
+  .image-containerS,
+  .image-containerB {
+    position: static;
+    display: block;
+    margin: 8px auto;
+    text-align: center;
+  }
+}
+
+
+.top-center-btn {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+    background: #5f7b87;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  display: inline-block;
+}
